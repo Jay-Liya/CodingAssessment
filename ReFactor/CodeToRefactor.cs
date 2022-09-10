@@ -50,9 +50,11 @@ namespace CodingAssessment.Refactor
                     if (random.Next(0, 1) == 0) {
                         name = "Bob";
                     }
-                    
+
                     // Adds new people to the list
-                    _people.Add(new People(name, DateTime.UtcNow.Subtract(new TimeSpan(random.Next(18, 85) * 356, 0, 0, 0))));
+                    TimeSpan interval = new TimeSpan(random.Next(18, 85) * 356, 0, 0, 0);
+                    People newPeople = new People(name, DateTime.UtcNow.Subtract(interval));
+                    _people.Add(newPeople);
                 }
                 catch (Exception e)
                 {
