@@ -68,7 +68,9 @@ namespace Utility.Valocity.ProfileHelper
         public string GetMarried(People p, string lastName)
         {
             if (lastName.Contains("test"))
+            {
                 return p.Name;
+            }
             if ((p.Name.Length + lastName.Length) > 255)
             {
                 (p.Name + " " + lastName).Substring(0, 255);
