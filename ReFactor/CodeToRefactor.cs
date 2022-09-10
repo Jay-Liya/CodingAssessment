@@ -44,7 +44,7 @@ namespace CodingAssessment.Refactor
             {
                 try
                 {
-                    // Creates a dandon Name
+                    // Creates a random Name
                     string name = string.Empty;
                     var random = new Random();
                     if (random.Next(0, 1) == 0) {
