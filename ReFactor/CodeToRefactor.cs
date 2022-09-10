@@ -45,14 +45,12 @@ namespace CodingAssessment.Refactor
                 try
                 {
                     // Creates a random Name
-                    string name = string.Empty;
+                    string name = "Betty";
                     var random = new Random();
                     if (random.Next(0, 1) == 0) {
                         name = "Bob";
                     }
-                    else {
-                        name = "Betty";
-                    }
+                    
                     // Adds new people to the list
                     _people.Add(new People(name, DateTime.UtcNow.Subtract(new TimeSpan(random.Next(18, 85) * 356, 0, 0, 0))));
                 }
