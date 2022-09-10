@@ -56,7 +56,7 @@ namespace CodingAssessment.Refactor
                     People newPeople = new People(name, DateTime.UtcNow.Subtract(interval));
                     _people.Add(newPeople);
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     // Dont think this should ever happen
                     throw new Exception("Something failed in user creation");

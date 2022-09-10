@@ -51,7 +51,7 @@ namespace Utility.Valocity.ProfileHelper
                     // Adds new people to the list
                     _people.Add(new People(name, DateTime.UtcNow.Subtract(new TimeSpan(random.Next(18, 85) * 356, 0, 0, 0))));
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     // Dont think this should ever happen
                     throw new Exception("Something failed in user creation");
